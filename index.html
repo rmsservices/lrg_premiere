@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Golf League Expansion Proposal</title>
+    <style>
+        :root {
+            --primary: #2f5d3a;
+            --secondary: #556;
+            --accent: #b00020;
+            --bg-light: #f4f4f4;
+            --white: #ffffff;
+            --border: rgba(0,0,0,.08);
+        }
+
+        * { box-sizing: border-box; }
+
+        /* GOOGLE SITES FIX: Added 100px padding to the bottom to prevent clipping */
+        body {
+            margin: 0;
+            padding: 10px 10px 100px 10px; 
+            background-color: var(--bg-light);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.55;
+            color: #111;
+            min-height: 100vh;
+        }
+
+        #mainWrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 50px; /* GOOGLE SITES FIX: Extra buffer at the bottom of the card */
+        }
+
+        /* Responsive Grids for the Form */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+            #mainWrapper { padding: 16px; }
+        }
+
+        /* Form Inputs */
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px; /* Prevents iOS zoom */
+            font-family: inherit;
+            margin-bottom: 12px;
+        }
+
+        input:focus, textarea:focus {
+            outline: 2px solid var(--primary);
+            border-color: transparent;
+        }
+
+        .radio-item {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            appearance: none; border: none; cursor: pointer; background: var(--primary); color: #fff; padding: 18px 20px; border-radius: 12px; font-weight: 800; width: 100%; font-size: 16px; transition: background 0.2s; margin-top: 10px;
+        }
+        
+        .btn-primary:active { background: #1e3d26; }
+
+        .subtotal-row { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 2px; color: #444; }
+        .player-header { font-weight: 800; font-size: 14px; color: var(--primary); margin-top: 10px; margin-bottom: 6px; border-bottom: 1px solid rgba(47,93,58,0.1); }
+        
+        #commitmentEstimate { 
+            background: #f0f7f2; 
+            border: 2px solid var(--primary); 
+            border-radius: 12px; 
+            padding: 15px; 
+            margin: 20px 0; 
+        }
+        
+        .label-bold { font-weight: 700; display: block; margin-bottom: 6px; font-size: 13px; color: #333; }
+        .section-tag { font-weight: 900; margin-bottom: 16px; border-bottom: 1px solid #ddd; padding-bottom: 4px; font-size: 14px; color: #556; }
+    </style>
+</head>
+<body>
+
+<section id="mainWrapper">
+
+    <!-- Header -->
+    <div style="text-align:center; padding:10px 0 6px;">
+        <div style="font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:#2f5d3a; font-weight:700;">Lakewood Rod &amp; Gun</div>
+        <h2 style="margin:8px 0 4px; font-size:26px; letter-spacing:.02em;">2026 League Expansion Proposal</h2>
+        <div style="color:#556; font-size:14px;">Document 1 — For All Current Members</div>
+    </div>
+
+    <div style="height:3px; background:#2f5d3a; border-radius:999px; margin:14px 0 18px;"></div>
+
+    <!-- WHY WE ARE EXPANDING -->
+    <h3 style="margin:0 0 10px; color:#2f5d3a; font-size:18px;">Why We Are Expanding</h3>
+
+    <p style="margin:0 0 12px;">
+        Our league continues to grow. Interest from new teams has increased, and we now have the ability to utilize both
+        sides of the course effectively. In order to provide more opportunities for additional teams to join — while
+        preserving the culture that has made this league successful — we are proposing an expansion beginning in 2026.
+    </p>
+
+    <div style="background:#f7f9f8; border:1px solid rgba(0,0,0,.08); border-left:6px solid #2f5d3a; border-radius:12px; padding:12px 14px; margin:0 0 14px;">
+        <div style="font-weight:800;">Expansion is the primary goal.</div>
+        <div style="color:#444;">Creating two styles of competition is the secondary benefit.</div>
+    </div>
+
+    <div style="background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:12px; padding:14px; box-shadow:0 3px 12px rgba(0,0,0,.06); margin:0 0 16px;">
+        <div style="font-weight:800; margin-bottom:8px;">By expanding to two divisions, we can:</div>
+        <ul style="margin:0; padding-left:18px;">
+            <li>Open additional team spots.</li>
+            <li>Reduce waitlists and turnover pressure.</li>
+            <li>Maintain the relaxed atmosphere many members value.</li>
+            <li>Provide a competitive pathway for teams seeking a higher-level format.</li>
+            <li>Align more closely with GHIN and USGA scoring standards so members can confidently post scores.</li>
+        </ul>
+    </div>
+
+    <p style="margin:0 0 18px; color:#333;">
+        In recent seasons, questions have arisen regarding score posting because certain local rules prevented scores from
+        being GHIN-compliant. By incorporating Maximum Net Double Bogey and aligning more closely with USGA structure in the
+        Premiere League, players will be able to post scores properly, eliminating outside confusion and ensuring handicap integrity.
+    </p>
+
+    <hr style="border:none; border-top:1px solid rgba(0,0,0,.12); margin:18px 0;">
+
+    <!-- STRUCTURE -->
+    <h3 style="margin:0 0 10px; color:#2f5d3a; font-size:18px;">Structure: Two Leagues, One Club</h3>
+
+    <div style="display:grid; grid-template-columns: 1fr; gap:12px;">
+
+        <div style="background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:12px; padding:14px; box-shadow:0 3px 12px rgba(0,0,0,.06);">
+            <div style="font-weight:900; font-size:16px;">Heritage League (Current League Expanded)</div>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+                <li>Up to 16 total teams.</li>
+                <li>Retains traditional “Jungle Rules.”</li>
+                <li>Lift, clean, and place allowed in the fairway.</li>
+                <li>Relaxed pace and culture remain intact.</li>
+                <li>Traditional final-week position round.</li>
+            </ul>
+        </div>
+
+        <div style="background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:12px; padding:14px; box-shadow:0 3px 12px rgba(0,0,0,.06);">
+            <div style="font-weight:900; font-size:16px;">Premiere League (New Competitive Division)</div>
+            <ul style="margin:10px 0 0; padding-left:18px;">
+                <li>12 teams maximum in Year 1.</li>
+                <li>Strict USGA rules framework.</li>
+                <li>Structured 4-week playoff bracket (A / B / C Flights).</li>
+                <li>More competitive scoring format.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div style="margin:14px 0 18px; background:#f7f9f8; border:1px solid rgba(0,0,0,.08); border-radius:12px; padding:12px 14px;">
+        <div style="font-weight:800; margin-bottom:6px;">Both leagues will share:</div>
+        <ul style="margin:0; padding-left:18px;">
+            <li>Administration</li>
+            <li>Weekly culture</li>
+            <li>End-of-year banquet</li>
+        </ul>
+    </div>
+
+    <hr style="border:none; border-top:1px solid rgba(0,0,0,.12); margin:18px 0;">
+
+    <!-- Handicap -->
+    <h3 style="margin:0 0 6px; color:#2f5d3a; font-size:18px;">Unified Handicap System</h3>
+
+    <p style="margin:0 0 10px;">
+        Each player will carry one unified league handicap calculated using the lowest 4 of their most recent 6 league scores.
+    </p>
+
+    <p style="margin:0 0 12px;">
+        For players with fewer than 6 scores, 60% of available rounds (rounded up) will be used.
+        Handicaps will be fully recalculated each week.
+    </p>
+
+    <div style="overflow-x:auto; margin-bottom:14px; border-radius: 8px; border: 1px solid #ddd;">
+        <table style="border-collapse:collapse; width:100%; min-width:560px;">
+            <tr>
+                <th style="text-align:left; border:1px solid #ddd; padding:9px 10px; background:#2f5d3a; color:#fff;">Rounds Played</th>
+                <th style="border:1px solid #ddd; padding:9px 10px; background:#2f5d3a; color:#fff; text-align:center;">1</th>
+                <th style="border:1px solid #ddd; padding:9px 10px; background:#2f5d3a; color:#fff; text-align:center;">2</th>
+                <th style="border:1px solid #ddd; padding:9px 10px; background:#2f5d3a; color:#fff; text-align:center;">3</th>
+                <th style="border:1px solid #ddd; padding:9px 10px; background:#2f5d3a; color:#fff; text-align:center;">4</th>
+                <th style="border:1px solid #ddd; padding:9px 10px; background:#2f5d3a; color:#fff; text-align:center;">5</th>
+                <th style="border:1px solid #ddd; padding:9px 10px; background:#2f5d3a; color:#fff; text-align:center;">6</th>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ddd; padding:9px 10px; font-weight:800;">Lowest Scores Used</td>
+                <td style="border:1px solid #ddd; padding:9px 10px; text-align:center;">1</td>
+                <td style="border:1px solid #ddd; padding:9px 10px; text-align:center;">2</td>
+                <td style="border:1px solid #ddd; padding:9px 10px; text-align:center;">2</td>
+                <td style="border:1px solid #ddd; padding:9px 10px; text-align:center;">3</td>
+                <td style="border:1px solid #ddd; padding:9px 10px; text-align:center;">3</td>
+                <td style="border:1px solid #ddd; padding:9px 10px; text-align:center;">4</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Schedule -->
+    <h3 style="margin:0 0 6px; color:#2f5d3a; font-size:18px;">18-Week Schedule Structure</h3>
+
+    <ul style="margin:0; padding-left:18px;">
+        <li>18 playable weeks available.</li>
+        <li>15 official scoring weeks required.</li>
+        <li>If 16 teams: round-robin (each team plays every other team once).</li>
+        <li>If a 16th week is played: one-week playoff or championship round.</li>
+    </ul>
+
+    <!-- PREMIERE LEAGUE DEEP DIVE -->
+    <div style="background: #2f5d3a; color: white; padding: 24px 20px; border-radius: 12px; margin-top: 40px; text-align: center;">
+        <h2 style="color: white; margin: 0; font-size: 24px;">Premiere League Deep Dive</h2>
+        <p style="margin: 8px 0 0; opacity: 0.9; font-size: 15px;">Rules, Financials & Commitment Form</p>
+    </div>
+
+    <div style="padding-top: 20px;">
+        
+        <!-- Season Structure + Playoff Link -->
+        <div style="background:#f7f9f8; border:1px solid rgba(0,0,0,.08); border-radius:12px; padding:12px 14px; margin:0 0 16px;">
+            <div style="font-weight:800; margin-bottom:6px;">Season Structure</div>
+            <ul style="margin:0; padding-left:18px;">
+                <li><strong>15 scoring weeks total:</strong> 11-week regular season + 4-week playoffs</li>
+                <li><strong>Regular-season seeding:</strong> aggregate points earned over Weeks 1–11 determine playoff seeds</li>
+                <li><strong>Playoffs:</strong> Weeks 12–15 (bracket format with A / B / C flights)</li>
+            </ul>
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin:0 0 16px;">
+            <a href="https://sites.google.com/view/lrggolf/playoff-bracket" target="_blank"
+               style="display:inline-block; text-decoration:none; background:#2f5d3a; color:#fff; padding:10px 14px; border-radius:10px; font-weight:800; font-size:14px;">
+                View Full Playoff Bracket Page
+            </a>
+            <span style="color:#667; font-size:13px; align-self:center;">
+                (Detailed A/B/C flight playoff rules &amp; bracket)
+            </span>
+        </div>
+
+        <!-- Financial Commitment -->
+        <h3 style="margin:0 0 10px; color:#2f5d3a; font-size:18px;">Financial Commitment</h3>
+        <div style="background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:12px; padding:14px; box-shadow:0 3px 12px rgba(0,0,0,.06); margin:0 0 14px;">
+            <ul style="margin:0; padding-left:18px;">
+                <li><strong>League Pool:</strong> $300 per player</li>
+                <li><strong>Greens &amp; Cart (Non-Members):</strong> Approximately $300 for the season</li>
+                <li><strong>South Hills Members:</strong> Approximately $150 for the season (cart only)</li>
+            </ul>
+            <p style="margin:10px 0 0;">
+                <strong>Estimated Total Commitment:</strong><br>
+                Non-Members: ~ $600<br>
+                South Hills Members: ~ $450
+            </p>
+        </div>
+
+        <hr style="border:none; border-top:1px solid rgba(0,0,0,.12); margin:18px 0;">
+
+        <!-- Rules Framework -->
+        <h3 style="margin:0 0 10px; color:#2f5d3a; font-size:18px;">Rules Framework</h3>
+        <ul style="margin:0 0 14px; padding-left:18px;">
+            <li>USGA Rules apply.</li>
+            <li>Out of Bounds follows USGA Local Rule E-5 (two-stroke penalty, fairway drop).</li>
+            <li>Preferred Lies (Winter Rules) will be adopted in closely mown fairway areas.</li>
+            <li>Scores will remain GHIN-compliant and postable.</li>
+        </ul>
+
+        <hr style="border:none; border-top:1px solid rgba(0,0,0,.12); margin:18px 0;">
+
+        <!-- Grace & Pace -->
+        <h3 style="margin:0 0 10px; color:#2f5d3a; font-size:18px;">Grace &amp; Pace Rule</h3>
+        <ul style="margin:0 0 14px; padding-left:18px;">
+            <li>Once a hole is mathematically decided, the losing player may pick up and proceed.</li>
+            <li>The player who picks up records a <strong>Maximum Net Double Bogey</strong> (GHIN/USGA definition).</li>
+            <li>A hole cannot be won by a Maximum Net Double Bogey; it must be won outright.</li>
+            <li>Maximum Net Double Bogey counts toward total net score for match points.</li>
+        </ul>
+
+        <hr style="border:none; border-top:1px solid rgba(0,0,0,.12); margin:18px 0;">
+
+        <!-- Playoffs -->
+        <h3 style="margin:0 0 10px; color:#2f5d3a; font-size:18px;">Playoff Format</h3>
+
+        <div style="background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:12px; padding:14px; box-shadow:0 3px 12px rgba(0,0,0,.06); margin-bottom:14px;">
+            <strong>Championship Purses:</strong>
+            <ul style="margin:8px 0 0; padding-left:18px;">
+                <li>A-Flight Champion: $350</li>
+                <li>A-Flight Runner-Up: $150</li>
+                <li>B-Flight Champion: $140</li>
+                <li>C-Flight Champion: $80</li>
+            </ul>
+            <div style="margin-top:10px; color:#556; font-size:13px;">
+                These purses are funded through the banked end-of-season pool.
+            </div>
+        </div>
+
+        <ul style="margin:0 0 14px; padding-left:18px;">
+            <li>Week 12 – Wildcard Round</li>
+            <li>Week 13 – Quarterfinals</li>
+            <li>Week 14 – Semifinals</li>
+            <li>Week 15 – Championship Week</li>
+        </ul>
+
+        <div style="background:#f7f9f8; border:1px solid rgba(0,0,0,.08); border-radius:12px; padding:12px 14px; margin-bottom:18px;">
+            <strong>Parimutuel Championship Betting Option</strong>
+            <div style="color:#556; font-size:13px; margin-top:4px;">Optional Win / Place / Show betting through homestretchgolf.com</div>
+            <ul style="margin:8px 0 0; padding-left:18px;">
+                <li>Win: A-Flight Champion</li>
+                <li>Place: A-Flight Runner-Up</li>
+                <li>Show: B-Flight Champion</li>
+            </ul>
+        </div>
+
+        <hr style="border:none; border-top:1px solid rgba(0,0,0,.12); margin:18px 0;">
+
+        <!-- $300 Breakdown -->
+        <h3 style="margin:0 0 10px; color:#2f5d3a; font-size:18px;">$300 Upfront Structure</h3>
+        <p style="margin:0 0 8px;">Based on 12 teams (24 players):</p>
+        <ul style="margin:0 0 18px; padding-left:18px;">
+            <li>$6 – Net Skins → $144/week / $2,160 season</li>
+            <li>$6 – Gross Skins → $144/week / $2,160 season</li>
+            <li>$2 – Closest to Pin → $48/week / $720 season</li>
+            <li>$2 – Net Low Round → $48/week / $720 season</li>
+            <li>$2 – Gross Low Round → $48/week / $720 season</li>
+            <li>$2 – End-of-Season Bank → $48/week / $720 season</li>
+        </ul>
+
+        <hr style="border:none; border-top:1px solid rgba(0,0,0,.12); margin:24px 0;">
+
+        <!-- FORM START -->
+        <form id="proposalForm">
+            <h3 style="margin:0 0 14px; color:#2f5d3a; font-size:20px; border:none;">Premiere League Commitment Form</h3>
+
+            <div style="background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:12px; padding:20px; box-shadow:0 3px 12px rgba(0,0,0,.06);">
+                
+                <!-- Section 1: Team Info -->
+                <div style="margin-bottom:24px;">
+                    <div class="section-tag">SECTION 1 — PLAYER INFO</div>
+
+                    <div class="grid-2">
+                        <!-- Player 1 -->
+                        <div style="background: #fafafa; padding: 16px; border-radius: 12px; border: 1px solid #eee;">
+                            <label class="label-bold">Player 1 Name <span style="color:var(--accent);">*</span></label>
+                            <input type="text" id="p1NameInput" name="player1_name" placeholder="First Last" autocomplete="name" required>
+                            
+                            <label class="label-bold">Player 1 Phone <span style="color:var(--accent);">*</span></label>
+                            <input type="tel" name="player1_phone" placeholder="(###) ###-####" autocomplete="tel" required>
+
+                            <label class="label-bold">Player 1 Email <span style="color:var(--accent);">*</span></label>
+                            <input type="email" name="player1_email" placeholder="name@email.com" autocomplete="email" required>
+
+                            <label class="label-bold" style="font-size: 12px; margin-top: 14px; color: var(--primary);">South Hills Member?</label>
+                            <div style="margin-bottom: 14px; display: flex; gap: 20px;">
+                                <label style="cursor:pointer; font-size: 14px;"><input type="radio" class="sh-toggle" name="p1_sh" value="Yes"> Yes</label>
+                                <label style="cursor:pointer; font-size: 14px;"><input type="radio" class="sh-toggle" name="p1_sh" value="No" checked> No</label>
+                            </div>
+
+                            <label class="label-bold" style="font-size: 12px; color: var(--primary);">Rod & Gun Member Status?</label>
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <label style="cursor:pointer; font-size: 14px;"><input type="radio" name="p1_lrg" value="Current Member" required> Current Member</label>
+                                <label style="cursor:pointer; font-size: 14px;"><input type="radio" name="p1_lrg" value="Will Apply"> Will apply when it opens</label>
+                            </div>
+                        </div>
+
+                        <!-- Player 2 -->
+                        <div style="background: #fafafa; padding: 16px; border-radius: 12px; border: 1px solid #eee;">
+                            <label class="label-bold">Player 2 Name <span style="color:var(--accent);">*</span></label>
+                            <input type="text" id="p2NameInput" name="player2_name" placeholder="First Last" autocomplete="name" required>
+                            
+                            <label class="label-bold">Player 2 Phone <span style="color:var(--accent);">*</span></label>
+                            <input type="tel" name="player2_phone" placeholder="(###) ###-####" autocomplete="tel" required>
+
+                            <label class="label-bold">Player 2 Email</label>
+                            <input type="email" name="player2_email" placeholder="name@email.com" autocomplete="email">
+
+                            <label class="label-bold" style="font-size: 12px; margin-top: 14px; color: var(--primary);">South Hills Member?</label>
+                            <div style="margin-bottom: 14px; display: flex; gap: 20px;">
+                                <label style="cursor:pointer; font-size: 14px;"><input type="radio" class="sh-toggle" name="p2_sh" value="Yes"> Yes</label>
+                                <label style="cursor:pointer; font-size: 14px;"><input type="radio" class="sh-toggle" name="p2_sh" value="No" checked> No</label>
+                            </div>
+
+                            <label class="label-bold" style="font-size: 12px; color: var(--primary);">Rod & Gun Member Status?</label>
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <label style="cursor:pointer; font-size: 14px;"><input type="radio" name="p2_lrg" value="Current Member" required> Current Member</label>
+                                <label style="cursor:pointer; font-size: 14px;"><input type="radio" name="p2_lrg" value="Will Apply"> Will apply when it opens</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Commitment -->
+                <div style="margin-bottom:24px;">
+                    <div class="section-tag">SECTION 2 — STATUS</div>
+                    <label class="radio-item" style="font-weight: 700; margin-bottom: 12px;"><input type="radio" class="commit-toggle" name="commit" value="Committed" checked> ✅ Committed to Premiere League</label>
+                    <label class="radio-item" style="margin-bottom: 12px;"><input type="radio" class="commit-toggle" name="commit" value="Interested"> 🤝 Interested, but have questions</label>
+                    <label class="radio-item"><input type="radio" class="commit-toggle" name="commit" value="Not Participating"> ❌ Not participating</label>
+                </div>
+
+                <!-- Section 3: Feedback -->
+                <div style="margin-bottom:24px;">
+                    <div class="section-tag">SECTION 3 — QUESTIONS & FEEDBACK</div>
+                    <textarea name="feedback" rows="3" placeholder="Questions regarding rules, cost, schedule, etc."></textarea>
+                </div>
+
+                <!-- DYNAMIC ESTIMATE -->
+                <div id="commitmentEstimate">
+                    <div style="font-weight: 900; color: #2f5d3a; font-size: 13px; text-transform: uppercase; margin-bottom: 8px;">Season Estimate (15 Weeks)</div>
+                    
+                    <div id="p1Header" class="player-header">Player 1</div>
+                    <div class="subtotal-row"><span>League Pool / Fees:</span><span id="p1Display" style="font-weight:700;">$600</span></div>
+
+                    <div id="p2Header" class="player-header">Player 2</div>
+                    <div class="subtotal-row"><span>League Pool / Fees:</span><span id="p2Display" style="font-weight:700;">$600</span></div>
+
+                    <div style="margin-top: 15px; padding-top: 10px; border-top: 2px solid #2f5d3a; display: flex; justify-content: space-between; font-size: 16px; font-weight: 900; color: #111;">
+                        <span>Estimated Team Total:</span>
+                        <span id="teamDisplay">$1,200</span>
+                    </div>
+
+                    <div id="estimateDisclaimer" style="display: none; margin-top: 12px; font-size: 11px; color: var(--accent); font-weight: 700; text-align: center;">
+                        Informational estimate only.
+                    </div>
+                </div>
+
+                <!-- NEW DISCLAIMER BOX -->
+                <div style="background: #fdf5e6; border: 1px solid #f8dca6; color: #8a6522; padding: 14px; border-radius: 10px; font-size: 13px; margin-bottom: 16px; text-align: center; line-height: 1.45;">
+                    <strong>Please Note:</strong> Submitting this form helps us gauge interest but does not guarantee a spot. Once all responses are gathered, the final roster will be selected to ensure an even, competitive field for the Premiere League.
+                </div>
+
+                <button type="submit" class="btn-primary" id="submitBtn">
+                    Confirm &amp; Draft Email
+                </button>
+            </div>
+        </form>
+
+        <!-- SUCCESS VIEW -->
+        <div id="successView" style="display: none; text-align: center; padding: 40px 10px;">
+            <div style="font-size: 50px; margin-bottom: 10px;">🚀</div>
+            <h2 style="color: #2f5d3a; margin-top: 0;">Response Prepared</h2>
+            <div style="background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:12px; padding:20px; box-shadow:0 3px 12px rgba(0,0,0,.06); margin-bottom: 20px;">
+                <p style="color: #556; font-size: 15px; margin-bottom: 20px;">
+                    If your email app didn't open automatically, use the button below:
+                </p>
+                <a id="manualMailto" href="#" style="display: inline-block; text-decoration: none; background: #2f5d3a; color: white; padding: 15px 30px; border-radius: 12px; font-weight: 800; font-size: 15px;">
+                    Open Email App
+                </a>
+            </div>
+            <button onclick="window.location.reload()" style="background: #eee; border: none; padding: 12px 20px; border-radius: 10px; cursor: pointer; font-weight: 700; color: #444; width: 100%; max-width: 300px;">Start Over</button>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    const form = document.getElementById('proposalForm');
+    const successView = document.getElementById('successView');
+    const manualMailto = document.getElementById('manualMailto');
+    
+    const estimateBox = document.getElementById('commitmentEstimate');
+    const p1Header = document.getElementById('p1Header');
+    const p1Display = document.getElementById('p1Display');
+    const p2Header = document.getElementById('p2Header');
+    const p2Display = document.getElementById('p2Display');
+    const teamDisplay = document.getElementById('teamDisplay');
+    const estimateDisclaimer = document.getElementById('estimateDisclaimer');
+
+    function updateEstimates() {
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        p1Header.innerText = (data.player1_name && data.player1_name.trim() !== "") ? data.player1_name : "Player 1";
+        p2Header.innerText = (data.player2_name && data.player2_name.trim() !== "") ? data.player2_name : "Player 2";
+
+        if (data.commit === 'Committed' || data.commit === 'Interested') {
+            estimateBox.style.display = 'block';
+            estimateDisclaimer.style.display = (data.commit === 'Interested') ? 'block' : 'none';
+        } else {
+            estimateBox.style.display = 'none';
+        }
+
+        const p1Fee = data.p1_sh === 'Yes' ? 450 : 600;
+        const p2Fee = data.p2_sh === 'Yes' ? 450 : 600;
+        
+        p1Display.innerText = `$${p1Fee}`;
+        p2Display.innerText = `$${p2Fee}`;
+        teamDisplay.innerText = `$${p1Fee + p2Fee}`;
+    }
+
+    document.querySelectorAll('input').forEach(input => {
+        input.addEventListener('input', updateEstimates);
+        input.addEventListener('change', updateEstimates);
+    });
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        const p1Sub = data.p1_sh === 'Yes' ? 450 : 600;
+        const p2Sub = data.p2_sh === 'Yes' ? 450 : 600;
+
+        let summary = `2026 GOLF LEAGUE RESPONSE\n`;
+        summary += `---------------------------\n`;
+        summary += `P1: ${data.player1_name} | Phone: ${data.player1_phone} | Email: ${data.player1_email}\n`;
+        summary += `   SH: ${data.p1_sh} | LRG: ${data.p1_lrg} | $${p1Sub}\n`;
+        summary += `P2: ${data.player2_name} | Phone: ${data.player2_phone} | Email: ${data.player2_email || 'N/A'}\n`;
+        summary += `   SH: ${data.p2_sh} | LRG: ${data.p2_lrg} | $${p2Sub}\n`;
+        summary += `TEAM TOTAL: $${p1Sub + p2Sub}\n`;
+        summary += `STATUS: ${data.commit}\n`;
+        if(data.feedback) summary += `\nFEEDBACK/QUESTIONS: ${data.feedback}\n`;
+        summary += `---------------------------`;
+
+        try {
+            const el = document.createElement('textarea');
+            el.value = summary;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        } catch (copyErr) {}
+
+        const recipient = "rmsservices.ny@gmail.com";
+        const subject = encodeURIComponent(`Golf League: ${data.player1_name}`);
+        const body = encodeURIComponent(summary);
+        const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+        manualMailto.href = mailtoLink;
+        window.location.href = mailtoLink;
+
+        form.style.display = 'none';
+        successView.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    updateEstimates();
+</script>
+
+</body>
+</html>
